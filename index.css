@@ -12,7 +12,7 @@ body {
 /* Site header styles */
 
 header {
-    background-image: url("./images/banner.png");
+    background-image: url("/images/banner.png");
     background-size: cover;
     color: #FFFFFF;
     padding: 30px 46px 70px 46px;
