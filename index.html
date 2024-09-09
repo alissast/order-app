@@ -1,0 +1,50 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 class="company-name">Jimmy's Diner</h1>
+            <p class="company-slogan">The best burgers and pizza in town.</p>
+        </header>
+        <main>
+            <article class="menu-container" id="menu-container">
+            </article>
+            <article class="order-details hidden" id="order-details">
+                <h2 class="order-details-title">Your order</h2>
+                <div class="order-items-container" id="order-items-container"></div>
+                <div class="order-items-total" id="order-items-total"></div>
+                <button class="btn-submit" id="btn-complete">Complete order</button>
+            </article>
+            <article class="order-confirmed-container hidden" id="order-confirmed-container">
+                Thanks, James! Your order is on its way!
+            </article>
+        </main>
+        <div class="payment-modal hidden" id="payment-modal" aria-hidden="true">
+            <h2 class="payment-details-title">Enter card details</h2>
+            <form id="payment-form" class="payment-form">
+                <div class="payment-form-group">
+                    <label for="payment-form-name">Name</label>
+                    <input type="text" id="card-name" name="card-name" required placeholder="Enter your name">
+                </div>
+                <div class="payment-form-group">
+                    <label for="payment-form-card-number">Card number</label>
+                    <input type="text" id="card-number" name="card-number" required placeholder="Enter card number">
+                </div>
+                <div class="payment-form-group">
+                    <label for="payment-form-cvv">CVV</label>
+                    <input type="text" id="card-cvv" name="card-cvv" required placeholder="Enter CVV">
+                </div>
+                <button class="btn-submit btn-pay" id="btn-pay">Pay</button>
+            </form>
+        </div>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

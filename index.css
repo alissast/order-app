@@ -1,0 +1,194 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Smythe", system-ui;
+} 
+
+/* Site header styles */
+
+header {
+    background-image: url("./images/banner.png");
+    background-size: cover;
+    color: #FFFFFF;
+    padding: 30px 46px 70px 46px;
+}
+
+.company-name {
+    font-size: 39px;
+}
+
+.company-slogan {
+    font-size: 22.25px;
+}
+
+/* Menu item container styles */
+
+.menu-item-container {
+    border-bottom: 1px solid #D2D2D2;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;    
+}
+
+.btn-add-to-cart {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1.5px solid #DEDEDE;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.icon-add-to-cart {
+    color: #3C3C3C;
+    font-size: 32px;
+    font-family: "Inter", system-ui;
+    font-weight: 200;
+}
+
+/* Order details container styles */
+
+.order-details {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.order-items-container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #393333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.order-details-title {
+    text-align: center;
+}
+
+.order-details-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    gap: 15px;
+    font-size: 1.75rem;
+    
+}
+
+.order-item-price {
+    font-size: 1.25rem;
+}
+
+.btn-submit {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+    background-color: #16DB99;
+    padding: 1.5em;
+    border: none;
+    border-radius: 3.75px;
+    margin: 1.5em 0;
+}
+
+.btn-remove {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 24px;
+    font-size: 12px;
+    border: none;
+    background: inherit;
+}
+
+.order-item-remove-btn {
+    display: flex;
+    gap: 15px;
+}
+
+/* Payment modal styles */
+
+.payment-modal {
+    display: block;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #FFFFFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 200px #757575;;
+    max-height: 80%;
+    max-width: 500px;
+    overflow-y: auto;
+}
+
+.payment-details-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.payment-form {
+    width: 100%;
+}
+
+.payment-form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form-group label{
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.payment-form-group input {
+    width: 100%;
+    padding: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.875rem;
+    font-size: 1.25rem;
+    border: 1px solid #757575;
+    border-radius: 5px;
+}
+
+.btn-pay {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Order confirmed styles */
+
+.order-confirmed-container {
+    color: #065F46;
+    background-color: #ECFDF5;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1.875em 1.75em;;
+    margin: 1.5em 0;
+}
+
+/* Utility classes */
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
